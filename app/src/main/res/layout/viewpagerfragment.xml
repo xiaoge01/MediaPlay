@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+        android:id="@+id/mymusic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:text="喜欢这首歌，就赶快收藏吧"/>
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/mymusic_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mymusic_login"
+        android:background="@drawable/mymusic_loginshape"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:textColor="#31C27C"
+        android:textSize="17sp"
+        android:text="立即登录"/>
+    
+    <ListView
+        android:id="@+id/viewpager_fragment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none">
+
+    </ListView>
+</RelativeLayout>

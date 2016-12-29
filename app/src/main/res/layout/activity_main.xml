@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#31C27C"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/main_menu"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_menu" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/MyTitleStyle"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/black"
+            android:layout_weight="1">
+
+
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/main_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_setting" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+        "
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <com.spro.myapplication.util.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/circle_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/splash_01"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/song"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/circle_iv"
+            android:text="奔跑"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/circle_iv"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
